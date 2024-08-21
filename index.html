@@ -212,6 +212,73 @@
             </tr>
           </table>
       
+    <!-- Froms -->
+    <form action="" method="get">
+
+        Select one from the dropdown: 
+        <select name="Option">
+          <option value=0>Select an option</option>
+          <option value="a">Option a</option>
+          <option value="b">Option b</option>
+          <option value="c">Option c</option>
+        </select>
+      
+        <br><br><!-- Bad practice to use break tags -->
+        
+        Select a browser from the dropdown (try type-ahead), or type your own:
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Edge">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+          <option value="Internet Explorer">
+        </datalist>
+        
+        <br><br>
+        
+        <fieldset>
+          <legend>Select one (you may click the labels): </legend>
+          <label for="radioa">Cats </label><input type="radio" name="animal" id="radioa" value="cats"> or <label for="radiob">dogs </label><input type="radio" name="animal" id="radiob" value="dogs"> or <label for="radioc">ferret </label><input type="radio" name="animal" id="radioc" value="ferret">
+        </fieldset>
+      
+        <br>
+        <fieldset>
+          <legend>Select any extras for your burger: </legend>
+      
+          <label for="bacon">Bacon</label>
+          <input type="checkbox" name="burger" id="bacon" value="bacon">
+      
+          <label for="cheese">Cheese</label><input type="checkbox" name="burger" id="cheese" value="cheese">
+      
+          <label for="tomato">Tomato</label><input type="checkbox" name="burger" id="tomato" value="tomato">
+      
+          <label for="pickled_cucumber">Pickled Cucumber</label><input type="checkbox" name="burger" id="pickled_cucumber" value="pickled_cucumber">
+      
+          <label for="jalapenos">Jalapenos</label><input type="checkbox" name="burger" id="jalapenos" value="jalapenos">
+        </fieldset>
+        
+      <!-- Note that having multiple checkboxes on one line makes it harder to know which belonging to which... -->
+      
+        <br>
+        <label for="fname">First name: </label>
+        <input type="text" name="firstname" id="fname">
+      
+        <br>
+        <label for="lname">Last name: </label>
+        <input type="text" name="lastname" id="lname">
+        
+          <br>
+        <label for="email">Email-address: </label>
+        <input type="email" id="email">
+      
+        <br><br>
+        Points: <input type="range" name="points" min="0" max="10">
+      
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
 </body>
 
 </html>
